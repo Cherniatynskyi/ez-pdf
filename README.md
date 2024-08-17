@@ -1,6 +1,6 @@
 # ezPDF - converting app
 
-Application that allows you to convert plane text pdf files
+Application that allows you to convert plane text to pdf files
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
