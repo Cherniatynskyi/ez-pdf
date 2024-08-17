@@ -1,8 +1,31 @@
-# Getting Started with Create React App
+# ezPDF - converting app
+
+Application that allows you to convert plane text pdf files
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Tasks and implementation
+
+- Text conversion is done using an HTTP request, where the response is a PDF file.
+
+Note* I tried using other conversion methods, because the data coming from this response did not fit the formatting standards of the PDF Previewer I used in the application. It must undergo preliminary linearization. Also, sometimes an empty PDF file is returned (without the transferred text).
+
+- To display the PDF file, I used [Aprys](https://apryse.com/).
+
+- For convenient work with saved data, I used Redux State Manager (and a persistence for saving in Local Storage), where I saved the history of file conversions, with access to them.
+
+- To implement the User interface I used Tailwind and HeadlessUI (for the modal window)
+
+## Main Modules
+
+- InputForm - component for submit action management
+
+- PdfPreview - Pdf previewer component
+
+- PreviewModal - modal window rith rendered previewer
+
+- PdfList - list of previous generated components
+
 
 In the project directory, you can run:
 
