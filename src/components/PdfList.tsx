@@ -23,7 +23,7 @@ export default function PdfList() {
     const [listRef] = useAutoAnimate()
 
     const handleSetCurrentFile = (e: React.MouseEvent<HTMLElement>) =>{
-        dispatch(setCurrentFile(e.currentTarget.textContent))
+        dispatch(setCurrentFile({title: e.currentTarget.textContent}))
         dispatch(openModalAction())
     }
     return (

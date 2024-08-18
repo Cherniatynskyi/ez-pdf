@@ -16,7 +16,7 @@ export default function InputForm() {
 
         const fetchPdf = async() =>{
             await axios.post('http://95.217.134.12:4010/create-pdf?apiKey=78684310-850d-427a-8432-4a6487f6dbc4', {
-                text: "Test text 121241"
+                text: text
               })
               .then(function (response) {
                 setFile(response)
